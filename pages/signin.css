@@ -1,0 +1,109 @@
+:root{
+    --dark : #1f2937;
+    --blue : #3882f6;
+    --light0 : #808080;
+    --light1 : #e5e7eb;
+    --light2 : #f9faf8;
+}
+
+
+.signin-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90svh;
+    background-color: var(--dark);
+}
+
+.signin-form{
+    background-color: var(--light2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 400px;
+    padding: 20px;
+    gap: 15px;
+    border-radius: 5px;
+}
+
+.input-txt{
+    height: 40px;
+    width: 90%;
+    text-align: center;
+    border: 1px solid var(--light1);
+    background-color: var(--light1);
+    border-radius: 5px;
+}
+
+.signin-btn{
+    width: 200px;
+    height: 40px;
+    background-color: var(--blue);
+    color: var(--light2);
+    border: none;
+    border-radius: 5px;
+}
+
+.signin-btn:hover{
+    transition: 1s;
+    background-color: var(--dark);
+}
+
+.forgot-password{
+    font-size: medium;
+    color: var(--light0);
+}
+
+.signup-now{
+    margin-top: 30px;
+    font-size: medium;
+    color: var(--light0);
+}
+
+.signup-now a{
+    color: var(--dark);
+}
+
+.signup-now a:hover{
+    transition: 1s;
+    color: var(--blue);
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    background-color: var(--dark);
+    display: flex;
+    justify-content: center;
+}
+
+.copyright{
+    color: var(--light1);
+}
+
+.nav-dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.nav-dropdown-content{
+    display: none;
+    position: absolute;
+    padding: 10px 10px;
+    background-color: var(--light2);
+}
+
+.nav-dropdown-content a{
+    text-decoration: none;
+    color: var(--dark);
+}
+
+.nav-dropdown:hover .nav-dropdown-content {
+    display: block;
+  }
+
+ 
