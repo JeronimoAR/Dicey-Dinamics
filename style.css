@@ -156,7 +156,7 @@ section h3 {
     margin-top: 3%;
     display: flex;
     justify-content: space-around;
-
+    flex-direction: row;
 }
 
 .game-info section {
@@ -192,6 +192,18 @@ footer {
     bottom: 0;
 }
 
-.Spell{
-    flex-direction: column;
+.game-about{
+    flex-wrap: wrap;
+    flex-direction: row;
+    border: solid;
+    border-radius: 0.1%;
 }
+
+.labal {
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: solid;
+    border-radius: 0.1%;
+    padding-left: 3%;
+}
+
