@@ -1,0 +1,57 @@
+li {
+    list-style: none;
+    display: inline-block;
+    padding: 0.5em 1em;
+}
+
+header {
+    justify-content: space-between;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;;
+}
+
+.quote-section {
+    background-image: url(../Images/about-chess-img.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 20vh;
+    width: 100vw;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+@media screen and (min-width: 768px) {
+    /* responsive design for quote sections */
+    .quote-section {
+        overflow: hidden;
+        height: 40vh;
+        width: 98.9vw;
+    }
+}
+
+.quote-section p {
+    /* can't apply the color bc it's too dark for the background */
+    margin-top: 1em;
+    font-style: light italic;
+    font-weight: 300;
+}
+
+.section img {
+    max-width: 30vw;
+    max-height: auto;
+}
+
+.scrollbox {
+  overflow: auto;
+  width: 60%;
+  max-height: 10vh;
+}
+
