@@ -355,7 +355,7 @@ section h3 {
     .quote-section {
         overflow: hidden;
         height: 40vh;
-        width: 98.9vw;
+        width: 100%;
     }
 }
 
@@ -482,4 +482,3 @@ footer a{
 .footer-about small {
     margin-top: 1em;
 }
-
