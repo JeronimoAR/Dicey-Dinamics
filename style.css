@@ -34,6 +34,15 @@ ol {
     text-decoration: none;
 }
 
+.logo {
+    display: flex;
+    color: white;
+}
+.logo h2 {
+    padding-left: 10px;
+}
+
+
 /*Index (Laning page)*/
 .button {
     background-color: #3882f6;
