@@ -390,6 +390,14 @@ section h3 {
 }
 
 @media screen and (max-width: 768px){
+    .section-3 p{
+        font-size: 20px;
+    }
+
+    .section-3 strong{
+        font-size: 10px;
+    }
+
     .games-list li {
         flex-basis: 50%;
     }
