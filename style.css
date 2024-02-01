@@ -134,6 +134,7 @@ header nav a {
 
 .section-1 p {
     font-size: 18px;
+    
 }
 
 .section-1 .image-container {
@@ -213,6 +214,7 @@ header nav a {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     flex-direction: column;
 }
 
@@ -353,6 +355,7 @@ section h3 {
   width: 60%;
   max-height: 10vh;
   margin: 1em 0;
+  text-align: center;
 }
 
 .quote-section {
