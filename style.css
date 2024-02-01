@@ -71,6 +71,34 @@ header nav a {
     font-size: 18px;
 }
 
+
+.nav-dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.nav-dropdown-content{
+    display: none;
+    position: absolute;
+    padding: 10px 10px;
+    background-color: #E5E7EB;
+    border-radius: 5px;
+}
+
+.nav-dropdown-content a{
+    text-decoration: none;
+    padding: 3px 3px;
+    color: black;
+}
+
+.nav-dropdown:hover .nav-dropdown-content {
+    display: block;
+  }
+
+.nav-dropdown-content a:hover {
+    color: #3882f6;
+}
+
 .section-1 {
     background-color: var(--dark);
     display: flex;
@@ -211,6 +239,186 @@ section h3 {
     margin-bottom: 3%;
 }
 
+.signin-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90svh;
+    background-color: var(--dark);
+}
+
+.signin-form{
+    background-color: var(--light2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 400px;
+    padding: 20px;
+    gap: 15px;
+    border-radius: 5px;
+}
+
+.input-txt{
+    height: 40px;
+    width: 90%;
+    text-align: center;
+    border: 1px solid var(--light1);
+    background-color: var(--light1);
+    border-radius: 5px;
+}
+
+.signin-btn{
+    width: 200px;
+    height: 40px;
+    background-color: var(--blue);
+    color: var(--light2);
+    border: none;
+    border-radius: 5px;
+}
+
+.signin-btn:hover{
+    transition: 1s;
+    background-color: var(--dark);
+}
+
+.forgot-password{
+    font-size: medium;
+    color: var(--light0);
+}
+
+.signup-now{
+    margin-top: 30px;
+    font-size: medium;
+    color: var(--light0);
+}
+
+.signup-now a{
+    color: var(--dark);
+}
+
+.signup-now a:hover{
+    transition: 1s;
+    color: var(--blue);
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3em;
+    margin-left: 10%;
+    margin-bottom: 3em;
+    padding-top: 1em;
+    background-color: #e5e7eb;
+    width: 80%;
+    border-radius: 0.5em;
+}
+
+.section h2 {
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.5);
+}
+
+.section img {
+    max-width: 30vw;
+    height: auto;
+}
+
+.scrollbox {
+  overflow: auto;
+  width: 60%;
+  max-height: 10vh;
+  margin: 1em 0;
+}
+
+.quote-section {
+    background-image: url(../Images/about-chess-img.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 20vh;
+    width: 100vw;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+@media screen and (min-width: 768px) {
+    /* responsive design for quote sections */
+    .quote-section {
+        overflow: hidden;
+        height: 40vh;
+        width: 98.9vw;
+    }
+}
+
+.quote-section p {
+    /* can't apply the color bc it's too dark for the background */
+    margin-top: 1em;
+    font-style: light italic;
+    font-weight: 300;
+}
+
+.games-list {
+    list-style: none;
+    padding: 0.5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+   
+.games-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.games-list img {
+    width: auto;
+    max-height: 30vh;
+}
+
+.games-list a {
+    color: black;
+}
+
+@media screen and (max-width: 768px){
+    .games-list li {
+        flex-basis: 50%;
+    }
+}
+
+.footer-about {
+    flex-direction: column;
+}
+
+.contact-us { 
+    display: flex;
+    margin-bottom: 1em;
+}
+
+.contact-us h2 {
+    margin-right: 3em;
+}
+
+@media screen and (min-width: 768px) {
+    .contact-us h2 {
+        margin-right: 10em;
+    }
+}
+
+.footer-nav {
+    display: flex;
+    gap: 2em;
+}
+
+.footer-about small {
+    margin-top: 1em;
+}
+
 .game-info {
     margin-top: 3%;
     display: flex;
@@ -249,6 +457,10 @@ footer {
     padding: 20px 0px;
     position: static;
     bottom: 0;
+}
+
+footer a{
+    color: var(--light2);
 }
 
 .game-about{
