@@ -145,6 +145,11 @@ header nav a {
     align-items: center;
 }
 
+.section-1 .headquarters-img{
+    width: 400px;
+    height: 210px;
+}
+
 .section-2{
     display: flex;
     align-items: center;
