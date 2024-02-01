@@ -38,10 +38,10 @@ ol {
     display: flex;
     color: white;
 }
+
 .logo h2 {
     padding-left: 10px;
 }
-
 
 /*Index (Laning page)*/
 .button {
@@ -82,7 +82,6 @@ header nav a {
     font-size: 18px;
 }
 
-
 .nav-dropdown{
     position: relative;
     display: inline-block;
@@ -104,7 +103,7 @@ header nav a {
 
 .nav-dropdown:hover .nav-dropdown-content {
     display: block;
-  }
+}
 
 .nav-dropdown-content a:hover {
     color: #3882f6;
@@ -118,6 +117,7 @@ header nav a {
     flex-wrap: wrap;
     width: 100%;
     min-height: 400px;
+
 }
 
 .section-1 div {
@@ -349,7 +349,6 @@ section h3 {
 }
 
 /* Scrollbox for the p when the screen too small */
-
 .scrollbox {
   overflow: auto;
   width: 60%;
@@ -369,15 +368,6 @@ section h3 {
     justify-content: center;
     align-items: center;
     color: white;
-}
-
-@media screen and (min-width: 768px) {
-    /* responsive design for quote sections */
-    .quote-section {
-        overflow: hidden;
-        height: 40vh;
-        width: 100%;
-    }
 }
 
 .quote-section p {
@@ -409,26 +399,6 @@ section h3 {
 
 .games-list a {
     color: black;
-}
-
-@media screen and (max-width: 768px){
-    .section-3 p{
-        font-size: 20px;
-    }
-
-    .section-3 strong{
-        font-size: 10px;
-    }
-
-    .games-list li {
-        flex-basis: 50%;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .contact-us h2 {
-        margin-right: 10em;
-    }
 }
 
 /*Game pages*/
@@ -477,7 +447,6 @@ section h3 {
 }
 
 /*Footer*/
-
 footer {
     width: 100%;
     background-color: var(--dark);
@@ -525,4 +494,66 @@ footer a {
 
 .footer-about small {
     margin-top: 1em;
+}
+
+/*Responsive design*/
+@media screen and (max-width: 768px) {
+
+    .section-1 .image-container {
+        width: 100vw;
+    }
+
+    .game-info {
+        margin-top: 3%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 5px;
+    }
+   
+    .game-info section {
+        width: 90vw;
+        padding: 5px;
+    }
+  
+    .section-3 p{
+        font-size: 20px;
+    }
+
+    .section-3 strong{
+        font-size: 10px;
+    }
+
+    .games-list li {
+        flex-basis: 50%;
+    }
+
+    /* responsive design for quote sections */
+    .quote-section {
+        overflow: hidden;
+        height: 40vh;
+        width: 100%;
+    }
+
+    .signin-form{
+        width: 85%;   
+    }
+
+    .contact-us { 
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1em;
+        width: 90svw;
+    }
+
+    .contact-us h2 {
+        margin-right: 10em;
+    }
+
+    .contact-us h2 {
+        margin-right: 0;
+    }
+    
+
 }
