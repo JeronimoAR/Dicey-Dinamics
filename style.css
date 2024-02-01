@@ -63,6 +63,7 @@ header nav {
     width: 30%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 header nav a {
@@ -75,13 +76,14 @@ header nav a {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     width: 100%;
-    height: 400px;
+    min-height: 400px;
 }
 
 .section-1 div {
     margin: 4%;
-    width: 25%;
+    width: 360px;
     color: var(--light1);
 }
 
@@ -109,13 +111,14 @@ header nav a {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 400px;
+    min-height: 400px;
 }
 
 .section-2 h1{
     color: var(--dark);
     font-size: 36px;
     font-family: 'Roboto Extra-bold';
+    text-align: center;
 }
 
 .cards {
@@ -124,11 +127,12 @@ header nav a {
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
-    height: 300px;
+    min-height: 300px;
 }
 
 .card{
     width: 220px;
+    margin-bottom: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -145,6 +149,61 @@ header nav a {
 
 .card p{
     width: 150px;
+}
+
+.section-3{
+    width: 100%;
+    min-height: 400px;
+    background-color: var(--light1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-3 p{
+    color: var(--dark);
+    font-family: 'Roboto Italic';
+    font-size: 36px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-3 strong{
+    align-self: flex-end;
+    font-size: 20px;
+}
+
+.section-4{
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-4 .callAction{
+    color: var(--light2);
+    background-color: var(--blue);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    width: 70%;
+    height: 100px;
+    padding: 20px;
+}
+
+.callAction p{
+    font-size: 15px;
+    color: var(--light1);
+}
+
+.callAction button{
+    border: 1px solid var(--light2)
 }
 
 section h3 {
