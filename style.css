@@ -266,7 +266,7 @@ section h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 500px;
+    width: 30%;
     height: 400px;
     padding: 20px;
     gap: 15px;
@@ -283,7 +283,7 @@ section h3 {
 }
 
 .signin-btn{
-    width: 200px;
+    width: 50%;
     height: 40px;
     background-color: var(--blue);
     color: var(--light2);
