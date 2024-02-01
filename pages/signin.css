@@ -72,7 +72,7 @@
     color: var(--blue);
 }
 
-footer{
+/* footer{
     position: absolute;
     bottom: 0;
     width: 100vw;
@@ -83,7 +83,7 @@ footer{
 
 .copyright{
     color: var(--light1);
-}
+} */
 
 .nav-dropdown{
     position: relative;
@@ -94,16 +94,22 @@ footer{
     display: none;
     position: absolute;
     padding: 10px 10px;
-    background-color: var(--light2);
+    background-color: #E5E7EB;
+    border-radius: 5px;
 }
 
 .nav-dropdown-content a{
     text-decoration: none;
-    color: var(--dark);
+    padding: 3px 3px;
+    color: black;
 }
 
 .nav-dropdown:hover .nav-dropdown-content {
     display: block;
   }
+
+.nav-dropdown-content a:hover {
+    color: #3882f6;
+}
 
  

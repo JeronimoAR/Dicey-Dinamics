@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dicey Dinamics</title>
     <link rel="stylesheet" href="./style.css">
-
+    <link rel="stylesheet" href="./pages/signin.css">
 </head>
 
 <body>
@@ -15,10 +15,15 @@
             <img src="./Images/icon.png">
         </div>
         <nav>
-            <a href="./pages/about.html">About</a>
-            <a href="./pages/games/clue.html">Clue</a>
-            <a href="./pages/games/Spellcrafters.html">Spellcrafters</a>
-            <a href="./pages/signin.html">Sign In</a>
+            <div class="nav-dropdown">
+                <a class="light-color" href="">Games</a>
+                <div class="nav-dropdown-content">
+                    <a class="dropdown-item" href="./pages/games/Spellcrafters.html" >Spellcrafters</a>
+                    <a class="dropdown-item" href="./pages/games/clue.html" >Clue</a>
+                </div>
+            </div>
+            <a class="light-color" href="./pages/about.html">About</a>
+            <a class="light-color" href="./pages/signin.html">Sign In</a>
         </nav>
     </header>
     <section class="section-1">
