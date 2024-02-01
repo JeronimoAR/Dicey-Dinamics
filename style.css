@@ -316,7 +316,9 @@ section h3 {
     color: var(--blue);
 }
 
-/*About page*/
+/* About page */
+
+/* Positioning of the main sections */
 .section {
     display: flex;
     align-items: center;
@@ -338,6 +340,8 @@ section h3 {
     max-width: 30vw;
     height: auto;
 }
+
+/* Scrollbox for the p when the screen too small */
 
 .scrollbox {
   overflow: auto;
@@ -387,6 +391,7 @@ section h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 1em;
 }
 
 .games-list img {
@@ -409,7 +414,9 @@ section h3 {
         margin-right: 10em;
     }
 }
+
 /*Game pages*/
+
 .game-info {
     margin-top: 3%;
     display: flex;
@@ -454,6 +461,7 @@ section h3 {
 }
 
 /*Footer*/
+
 footer {
     width: 100%;
     background-color: var(--dark);
@@ -466,7 +474,11 @@ footer {
     bottom: 0;
 }
 
-footer a{
+footer li {
+    list-style: none;
+}
+
+footer a {
     color: var(--light2);
 }
 
@@ -477,6 +489,13 @@ footer a{
 .contact-us { 
     display: flex;
     margin-bottom: 1em;
+}
+
+.footer-about ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
 }
 
 .contact-us h2 {
