@@ -8,11 +8,37 @@ li {
     justify-content: space-between;
 } */
 
+a {
+    color: white;
+}
+
 .section {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;;
+    flex-direction: column;
+    margin-top: 3em;
+    margin-left: 10%;
+    margin-bottom: 3em;
+    padding-top: 1em;
+    background-color: #e5e7eb;
+    width: 80%;
+    border-radius: 0.5em;
+}
+
+.section h2 {
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.5);
+}
+
+.section img {
+    max-width: 30vw;
+    height: auto;
+}
+
+.scrollbox {
+  overflow: auto;
+  width: 60%;
+  max-height: 10vh;
+  margin: 1em 0;
 }
 
 .quote-section {
@@ -44,14 +70,59 @@ li {
     font-weight: 300;
 }
 
-.section img {
-    max-width: 30vw;
-    max-height: auto;
+.games-list {
+    list-style: none;
+    padding: 0.5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+   
+.games-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.scrollbox {
-  overflow: auto;
-  width: 60%;
-  max-height: 10vh;
+.games-list img {
+    width: auto;
+    max-height: 30vh;
 }
 
+.games-list a {
+    color: black;
+}
+
+@media screen and (max-width: 768px){
+    .games-list li {
+        flex-basis: 50%;
+    }
+}
+
+footer {
+    flex-direction: column;
+}
+
+.contact-us { 
+    display: flex;
+    margin-bottom: 1em;
+}
+
+.contact-us h2 {
+    margin-right: 3em;
+}
+
+@media screen and (min-width: 768px) {
+    .contact-us h2 {
+        margin-right: 10em;
+    }
+}
+
+.footer-nav {
+    display: flex;
+    gap: 2em;
+}
+
+footer small {
+    margin-top: 1em;
+}
