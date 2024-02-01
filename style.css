@@ -1,3 +1,4 @@
+/*Main config */
 :root {
     --dark: #1f2937;
     --blue: #3882f6;
@@ -33,6 +34,7 @@ ol {
     text-decoration: none;
 }
 
+/*Index (Laning page)*/
 .button {
     background-color: #3882f6;
     color: var(--light2);
@@ -239,6 +241,7 @@ section h3 {
     margin-bottom: 3%;
 }
 
+/*Sign in page*/
 .signin-page{
     display: flex;
     flex-direction: column;
@@ -304,6 +307,7 @@ section h3 {
     color: var(--blue);
 }
 
+/*About page*/
 .section {
     display: flex;
     align-items: center;
@@ -334,7 +338,7 @@ section h3 {
 }
 
 .quote-section {
-    background-image: url(../Images/about-chess-img.jpg);
+    background-image: url(./Images/about-chess-img.jpg);
     background-size: cover;
     background-position: center;
     height: 20vh;
@@ -391,34 +395,12 @@ section h3 {
     }
 }
 
-.footer-about {
-    flex-direction: column;
-}
-
-.contact-us { 
-    display: flex;
-    margin-bottom: 1em;
-}
-
-.contact-us h2 {
-    margin-right: 3em;
-}
-
 @media screen and (min-width: 768px) {
     .contact-us h2 {
         margin-right: 10em;
     }
 }
-
-.footer-nav {
-    display: flex;
-    gap: 2em;
-}
-
-.footer-about small {
-    margin-top: 1em;
-}
-
+/*Game pages*/
 .game-info {
     margin-top: 3%;
     display: flex;
@@ -447,6 +429,22 @@ section h3 {
     font-family: "Roboto Extra-Bold";
 }
 
+.game-about{
+    flex-wrap: wrap;
+    flex-direction: row;
+    border: solid;
+    border-radius: 0.1%;
+}
+
+.labal {
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: solid;
+    border-radius: 0.1%;
+    padding: 3%;
+}
+
+/*Footer*/
 footer {
     width: 100%;
     background-color: var(--dark);
@@ -463,18 +461,25 @@ footer a{
     color: var(--light2);
 }
 
-.game-about{
-    flex-wrap: wrap;
-    flex-direction: row;
-    border: solid;
-    border-radius: 0.1%;
+.footer-about {
+    flex-direction: column;
 }
 
-.labal {
-    flex-wrap: wrap;
-    flex-direction: column;
-    border: solid;
-    border-radius: 0.1%;
-    padding: 3%;
+.contact-us { 
+    display: flex;
+    margin-bottom: 1em;
+}
+
+.contact-us h2 {
+    margin-right: 3em;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 2em;
+}
+
+.footer-about small {
+    margin-top: 1em;
 }
 
