@@ -31,6 +31,7 @@ ol {
     margin: 0;
     padding: 0;
     font-family: 'Roboto';
+    list-style-type: none;
     text-decoration: none;
 }
 
@@ -41,6 +42,18 @@ ol {
 
 .logo h2 {
     padding-left: 10px;
+}
+@media screen and (max-width: 480px) {
+    .logo h2 {
+        font-size: 18px;
+        flex: 1;
+        margin-right: 15px;
+    }
+
+    header nav {
+        flex: 1;
+        align-items: baseline;
+    }
 }
 
 /*Index (Laning page)*/
@@ -82,6 +95,12 @@ header nav a {
     font-size: 18px;
 }
 
+@media screen and (max-width: 480px) {
+    header nav a {
+        font-size: 14px;
+    }
+}
+
 .nav-dropdown{
     position: relative;
     display: inline-block;
@@ -108,6 +127,7 @@ header nav a {
 .nav-dropdown-content a:hover {
     color: #3882f6;
 }
+
 
 .section-1 {
     background-color: var(--dark);
@@ -408,6 +428,13 @@ section h3 {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
+}
+
+@media screen and (max-width: 480px) {
+    .game-info section {
+        flex-direction: row;
+        margin-top: 3%;
+    }
 }
 
 .game-info section {
