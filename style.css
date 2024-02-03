@@ -71,7 +71,7 @@ ol {
 }
 
 .button a {
-    color: white;
+    color: var(--light1);
 }
 
 header {
