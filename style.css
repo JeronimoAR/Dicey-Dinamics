@@ -94,14 +94,16 @@ header nav {
     flex-wrap: wrap;
 }
 
-header nav a {
+header nav a, .nav-dropdown p.light-color {
     color: var(--light1);
     font-size: 18px;
+    flex: baseline;
 }
 
 @media screen and (max-width: 480px) {
     header nav a, .nav-dropdown p.light-color {
         font-size: 14px;
+        flex: baseline;
     }
     ul li a {
         font-size: 12px;
