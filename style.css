@@ -35,6 +35,10 @@ ol {
     text-decoration: none;
 }
 
+body {
+    padding-top: 60px;
+}
+
 @media screen and (max-width: 480px) {
     .logo h2 {
         font-size: 18px;
@@ -77,6 +81,9 @@ ol {
 }
 
 header {
+    position: fixed;
+    top: 0;
+    width: 100%;
     padding: 15px 30px 15px 30px;
     display: flex;
     justify-content: space-around;
@@ -91,32 +98,37 @@ header nav {
     flex-wrap: wrap;
 }
 
-header nav a, .nav-dropdown p.light-color {
+header nav a,
+.nav-dropdown p.light-color {
     color: var(--light1);
     font-size: 18px;
     flex: baseline;
 }
 
 @media screen and (max-width: 480px) {
-    header nav a, .nav-dropdown p.light-color {
+
+    header nav a,
+    .nav-dropdown p.light-color {
         color: var(--light1);
         font-size: 14px;
         flex: baseline;
     }
+
     ul li a {
         font-size: 12px;
     }
 }
 
-.nav-dropdown{
+.nav-dropdown {
     position: relative;
     display: inline-block;
 }
+
 .nav-dropdown p.light-color {
     color: var(--light1);
 }
 
-.nav-dropdown-content{
+.nav-dropdown-content {
     display: none;
     position: absolute;
     padding: 10px 10px;
@@ -124,7 +136,7 @@ header nav a, .nav-dropdown p.light-color {
     border-radius: 5px;
 }
 
-.nav-dropdown-content a{
+.nav-dropdown-content a {
     text-decoration: none;
     padding: 3px 3px;
     color: black;
@@ -164,7 +176,7 @@ header nav a, .nav-dropdown p.light-color {
 
 .section-1 p {
     font-size: 18px;
-    
+
 }
 
 .section-1 .image-container {
@@ -175,12 +187,12 @@ header nav a, .nav-dropdown p.light-color {
     align-items: center;
 }
 
-.section-1 .headquarters-img{
+.section-1 .headquarters-img {
     width: 400px;
     height: 210px;
 }
 
-.section-2{
+.section-2 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -188,7 +200,7 @@ header nav a, .nav-dropdown p.light-color {
     min-height: 400px;
 }
 
-.section-2 h1{
+.section-2 h1 {
     color: var(--dark);
     font-size: 36px;
     font-family: 'Roboto Extra-bold';
@@ -204,7 +216,7 @@ header nav a, .nav-dropdown p.light-color {
     min-height: 300px;
 }
 
-.card{
+.card {
     width: 220px;
     margin-bottom: 30px;
     display: flex;
@@ -214,18 +226,18 @@ header nav a, .nav-dropdown p.light-color {
     text-align: center;
 }
 
-.card img{
+.card img {
     border-radius: 10px;
     border: 2px solid var(--blue);
     width: 150px;
     height: 150px;
 }
 
-.card p{
+.card p {
     width: 150px;
 }
 
-.section-3{
+.section-3 {
     width: 100%;
     min-height: 400px;
     background-color: var(--light1);
@@ -235,7 +247,7 @@ header nav a, .nav-dropdown p.light-color {
     align-items: center;
 }
 
-.section-3 p{
+.section-3 p {
     color: var(--dark);
     font-family: 'Roboto Italic';
     font-size: 36px;
@@ -247,12 +259,12 @@ header nav a, .nav-dropdown p.light-color {
     flex-direction: column;
 }
 
-.section-3 strong{
+.section-3 strong {
     align-self: flex-end;
     font-size: 20px;
 }
 
-.section-4{
+.section-4 {
     width: 100%;
     min-height: 200px;
     display: flex;
@@ -260,7 +272,7 @@ header nav a, .nav-dropdown p.light-color {
     align-items: center;
 }
 
-.section-4 .callAction{
+.section-4 .callAction {
     color: var(--light2);
     background-color: var(--blue);
     display: flex;
@@ -272,12 +284,12 @@ header nav a, .nav-dropdown p.light-color {
     padding: 20px;
 }
 
-.callAction p{
+.callAction p {
     font-size: 15px;
     color: var(--light1);
 }
 
-.callAction button{
+.callAction button {
     border: 1px solid var(--light2)
 }
 
@@ -287,7 +299,7 @@ section h3 {
 }
 
 /*Sign in page*/
-.signin-page{
+.signin-page {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -296,7 +308,7 @@ section h3 {
     background-color: var(--dark);
 }
 
-.signin-form{
+.signin-form {
     background-color: var(--light2);
     display: flex;
     flex-direction: column;
@@ -309,7 +321,7 @@ section h3 {
     border-radius: 5px;
 }
 
-.input-txt{
+.input-txt {
     height: 40px;
     width: 90%;
     text-align: center;
@@ -318,7 +330,7 @@ section h3 {
     border-radius: 5px;
 }
 
-.signin-btn{
+.signin-btn {
     width: 50%;
     height: 40px;
     background-color: var(--blue);
@@ -327,27 +339,27 @@ section h3 {
     border-radius: 5px;
 }
 
-.signin-btn:hover{
+.signin-btn:hover {
     transition: 1s;
     background-color: var(--dark);
 }
 
-.forgot-password{
+.forgot-password {
     font-size: medium;
     color: var(--light0);
 }
 
-.signup-now{
+.signup-now {
     margin-top: 30px;
     font-size: medium;
     color: var(--light0);
 }
 
-.signup-now a{
+.signup-now a {
     color: var(--dark);
 }
 
-.signup-now a:hover{
+.signup-now a:hover {
     transition: 1s;
     color: var(--blue);
 }
@@ -379,11 +391,11 @@ section h3 {
 
 /* Scrollbox for the p when the screen too small */
 .scrollbox {
-  overflow: auto;
-  width: 60%;
-  max-height: 10vh;
-  margin: 1em 0;
-  text-align: center;
+    overflow: auto;
+    width: 60%;
+    max-height: 10vh;
+    margin: 1em 0;
+    text-align: center;
 }
 
 .quote-section {
@@ -413,7 +425,7 @@ section h3 {
     flex-wrap: wrap;
     justify-content: center;
 }
-   
+
 .games-list li {
     display: flex;
     flex-direction: column;
@@ -468,7 +480,7 @@ section h3 {
     font-size: 24px;
 }
 
-.game-about{
+.game-about {
     flex-wrap: wrap;
     flex-direction: row;
     border: solid;
@@ -509,7 +521,7 @@ footer a {
     flex-direction: column;
 }
 
-.contact-us { 
+.contact-us {
     flex: 1;
     margin-bottom: 1em;
 }
@@ -549,17 +561,17 @@ footer a {
         flex-direction: column;
         gap: 5px;
     }
-   
+
     .game-info section {
         width: 90vw;
         padding: 5px;
     }
-  
-    .section-3 p{
+
+    .section-3 p {
         font-size: 20px;
     }
 
-    .section-3 strong{
+    .section-3 strong {
         font-size: 10px;
     }
 
@@ -574,11 +586,11 @@ footer a {
         width: 100%;
     }
 
-    .signin-form{
-        width: 85%;   
+    .signin-form {
+        width: 85%;
     }
 
-    .contact-us { 
+    .contact-us {
         flex: 1;
         justify-content: space-between;
         margin-bottom: 1em;
@@ -592,6 +604,6 @@ footer a {
     .contact-us h2 {
         margin-right: 0;
     }
-    
+
 
 }
