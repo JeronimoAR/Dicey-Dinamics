@@ -100,7 +100,7 @@ header nav a {
 }
 
 @media screen and (max-width: 480px) {
-    header nav a {
+    header nav a, .nav-dropdown p.light-color {
         font-size: 14px;
     }
     ul li a {
@@ -111,6 +111,9 @@ header nav a {
 .nav-dropdown{
     position: relative;
     display: inline-block;
+}
+.nav-dropdown p.light-color {
+    color: var(--light1);
 }
 
 .nav-dropdown-content{
