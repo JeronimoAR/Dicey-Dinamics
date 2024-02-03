@@ -35,14 +35,6 @@ ol {
     text-decoration: none;
 }
 
-.logo {
-    display: flex;
-    color: white;
-}
-
-.logo h2 {
-    padding-left: 10px;
-}
 @media screen and (max-width: 480px) {
     .logo h2 {
         font-size: 18px;
@@ -56,7 +48,7 @@ ol {
     }
 }
 
-/*Index (Laning page)*/
+/*Index (Landing page)*/
 .button {
     background-color: #3882f6;
     color: var(--light2);
@@ -74,17 +66,22 @@ ol {
     color: var(--light1);
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    color: var(--light1);
+}
+
+.logo h2 {
+    padding-left: 10px;
+}
+
 header {
     padding: 15px 30px 15px 30px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: var(--dark);
-}
-
-header div.normal-color {
-    font-size: 24px;
-    color: var(--light1);
 }
 
 header nav {
@@ -153,7 +150,7 @@ header nav a, .nav-dropdown p.light-color {
 
 }
 
-.section-1 div {
+.section-1 aside {
     margin: 4%;
     width: 360px;
     color: var(--light1);
@@ -173,7 +170,6 @@ header nav a, .nav-dropdown p.light-color {
 .section-1 .image-container {
     width: 400px;
     height: 210px;
-    background-color: var(--light0);
     display: flex;
     justify-content: center;
     align-items: center;
