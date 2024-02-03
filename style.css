@@ -70,6 +70,10 @@ ol {
     margin-top: 3%;
 }
 
+.button a {
+    color: white;
+}
+
 header {
     padding: 15px 30px 15px 30px;
     display: flex;
@@ -98,6 +102,9 @@ header nav a {
 @media screen and (max-width: 480px) {
     header nav a {
         font-size: 14px;
+    }
+    ul li a {
+        font-size: 12px;
     }
 }
 
