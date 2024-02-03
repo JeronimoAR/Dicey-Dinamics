@@ -290,7 +290,7 @@ section h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 71.45dvh;
+    height: 73.5dvh;
     background-color: var(--dark);
 }
 
@@ -484,6 +484,7 @@ section h3 {
 /*Footer*/
 footer {
     width: 100%;
+    height: auto;
     background-color: var(--dark);
     color: var(--light2);
     display: flex;
@@ -507,7 +508,7 @@ footer a {
 }
 
 .contact-us { 
-    display: flex;
+    flex: 1;
     margin-bottom: 1em;
 }
 
@@ -523,7 +524,7 @@ footer a {
 }
 
 .footer-nav {
-    display: flex;
+    flex: 1;
     gap: 2em;
 }
 
@@ -576,7 +577,7 @@ footer a {
     }
 
     .contact-us { 
-        display: flex;
+        flex: 1;
         justify-content: space-between;
         margin-bottom: 1em;
         width: 90svw;
