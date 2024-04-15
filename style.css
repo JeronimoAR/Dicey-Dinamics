@@ -84,7 +84,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 15px 30px 15px 30px;
+    padding: 15px 0px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -304,7 +304,7 @@ section h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 73.5dvh;
+    height: 80vh;
     background-color: var(--dark);
 }
 
@@ -444,7 +444,7 @@ section h3 {
 
 /*Game pages*/
 
-.game-main{
+.game-main {
     margin: 50px auto;
     width: 75%;
     background-color: var(--dark);
@@ -495,34 +495,34 @@ section h3 {
     border-radius: 36px;
 }
 
-.game-info section{
+.game-info section {
     width: 75%;
     padding: 30px 0px;
 }
 
-.game-info section:first-child{
+.game-info section:first-child {
     border-bottom: 2px solid var(--light1);
 }
 
-.game-info section:last-child{
+.game-info section:last-child {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.game-info section:last-child h3{
+.game-info section:last-child h3 {
     margin: 0;
 }
 
-.game-info section:last-child div{
+.game-info section:last-child div {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.game-info section:last-child div .button{
+.game-info section:last-child div .button {
     width: 150px;
     height: 40px;
     font-size: 16px;
@@ -623,13 +623,6 @@ footer a {
         width: 85%;
     }
 
-    .contact-us {
-        flex: 1;
-        justify-content: space-between;
-        margin-bottom: 1em;
-        width: 90svw;
-    }
-
     .contact-us h2 {
         margin-right: 10em;
     }
@@ -637,6 +630,41 @@ footer a {
     .contact-us h2 {
         margin-right: 0;
     }
+}
 
+@media (max-width: 425px) {
+    header{
+        flex-direction: column;
+    }
 
+    header nav{
+        width: 70%;
+    }
+
+    .contact-us{
+        font-size: 8px;
+    }
+
+    .game-main{
+        height: 70vh;
+        font-size: 12px;
+    }
+
+    .game-header{
+        width: 90%;
+    }
+
+    .game-header img{
+        width: 100%;
+        height: auto;
+    }
+
+    .game-info section{
+        max-width: 250px;
+        word-wrap: break-word;
+    }
+
+    .game-info section:last-child div .button{
+        width: 90px;
+    }
 }
